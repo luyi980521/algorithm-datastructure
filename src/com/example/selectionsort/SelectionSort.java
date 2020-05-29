@@ -2,8 +2,12 @@ package com.example.selectionsort;
 
 /**
  * Created by Lyman on 2020/5/28.
- * 描述：选择排序实现
- * 实现思路：在传入的数组中找到最小的元素，然后将它按照数值的大小依次进行排序
+ *
+ * 描述：选择排序实现，算法时间复杂度为 O(n^2)
+ * 实现思路：在传入的数组中设定最小元素的下标 minIndex 为数组最前面的元素，
+ * 然后将该下标处的值与后面元素的值进行比对，如果后面的元素小于它，
+ * 就将 minIndex 更新为那个元素的下标，一轮循环完成后将最初 minIndex
+ * 位置的元素与现在 minIndex 位置的元素交换位置。
  */
 public class SelectionSort {
 
@@ -40,9 +44,10 @@ public class SelectionSort {
     }
 
     public static void main(String[] args) {
-        int n = 10000;
+        int n = 100000;
         Integer[] arr = SortTestHelper.generateRandomArray(n, 0, n);
-        SelectionSort.sort(arr);
-        SortTestHelper.printArray(arr);
+//        SelectionSort.sort(arr);
+//        SortTestHelper.printArray(arr);
+        SortTestHelper.testSort("com.example.selectionsort.SelectionSort", arr);
     }
 }
