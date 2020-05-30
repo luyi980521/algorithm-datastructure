@@ -48,6 +48,17 @@ public class InsertionSort {
         }
     }
 
+    public static void sort(Comparable[] arr, int l, int r) {
+        for (int i = l + 1; i < r; i++) {
+            Comparable e = arr[i];
+            int j;
+            for (j = i; j > 0 && arr[j - 1].compareTo(e) > 0; j--) {
+                arr[j] = arr[j - 1];
+            }
+            arr[j] = e;
+        }
+    }
+
     /**
      * 将数组中的两个数字进行换位
      *
