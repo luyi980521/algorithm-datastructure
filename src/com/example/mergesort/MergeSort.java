@@ -34,7 +34,7 @@ public class MergeSort {
      * @param l 待排序数组的左边界
      * @param r 待排序数组的右边界
      */
-    private static void sort(Comparable[] arr, int l, int r) {
+    public static void sort(Comparable[] arr, int l, int r) {
 //        if (l >= r) return;
 
         if (r - l <= 15) {
@@ -61,7 +61,7 @@ public class MergeSort {
      * @param mid 传入的数组的中间位置的索引
      * @param r 传入的数组的右边界
      */
-    private static void merge(Comparable[] arr, int l, int mid, int r) {
+    public static void merge(Comparable[] arr, int l, int mid, int r) {
         Comparable[] aux = new Comparable[r - l + 1];
         // 将 arr[] 中的数拷贝到 aux[] 中
         for (int i = l; i <= r; i++) {
