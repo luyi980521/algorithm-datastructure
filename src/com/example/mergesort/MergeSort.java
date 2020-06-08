@@ -3,6 +3,8 @@ package com.example.mergesort;
 import com.example.insertionsort.InsertionSort;
 import com.example.selectionsort.SortTestHelper;
 
+import java.util.Arrays;
+
 /**
  * Created by Lyman on 2020/5/30.
  * <p>
@@ -34,15 +36,25 @@ public class MergeSort {
      * @param l 待排序数组的左边界
      * @param r 待排序数组的右边界
      */
+//    private static void sort(Comparable[] arr, int l, int r) {
+//
+//        if (l >= r)
+//            return;
+//
+//        int mid = (l+r)/2;
+//        sort(arr, l, mid);
+//        sort(arr, mid + 1, r);
+//        merge(arr, l, mid, r);
+//    }
     public static void sort(Comparable[] arr, int l, int r) {
-//        if (l >= r) return;
+        if (l >= r) return;
 
         if (r - l <= 15) {
             InsertionSort.sort(arr, l, r);
             return;
         }
 
-        int mid = l + (r - l) / 2;
+        int mid = (l + r) / 2;
         // 对 mid 左右两侧进行归并排序
         sort(arr, l, mid);
         sort(arr, mid + 1, r);
@@ -62,10 +74,10 @@ public class MergeSort {
      * @param r 传入的数组的右边界
      */
     public static void merge(Comparable[] arr, int l, int mid, int r) {
+//        Comparable[] aux = Arrays.copyOfRange(arr, l, r+1);
         Comparable[] aux = new Comparable[r - l + 1];
-        // 将 arr[] 中的数拷贝到 aux[] 中
         for (int i = l; i <= r; i++) {
-            aux[i - l] = arr[l];
+            aux[i - l] = arr[i];
         }
 
         // 为 mid 左右的数组设置指针

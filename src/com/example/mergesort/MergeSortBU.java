@@ -1,7 +1,5 @@
 package com.example.mergesort;
 
-import com.example.selectionsort.SortTestHelper;
-
 /**
  * Created by Lyman on 2020/6/3.
  * <p>
