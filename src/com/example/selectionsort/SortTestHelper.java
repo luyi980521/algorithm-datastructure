@@ -5,8 +5,7 @@ import java.lang.reflect.Method;
 import java.util.Random;
 
 /**
- * Created by Lyman on 2020/5/28.
- *
+ * Created by Lyman.
  * 描述：用于测试排序的工具类
  */
 public class SortTestHelper {

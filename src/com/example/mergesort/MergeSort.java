@@ -6,8 +6,7 @@ import com.example.selectionsort.SortTestHelper;
 import java.util.Arrays;
 
 /**
- * Created by Lyman on 2020/5/30.
- * <p>
+ * Created by Lyman.
  * 描述：实现归并排序，算法时间复杂度 O(nlogn)
  * 实现思路：将数组分成以递归的方式分成两半，分到一定细的粒度后将向上进行归并，
  * 归并时需要创建临时空间，将原数组中的元素全部移动到临时数组中，然后通过变量指针的形式实现比较，
@@ -36,18 +35,8 @@ public class MergeSort {
      * @param l 待排序数组的左边界
      * @param r 待排序数组的右边界
      */
-//    private static void sort(Comparable[] arr, int l, int r) {
-//
-//        if (l >= r)
-//            return;
-//
-//        int mid = (l+r)/2;
-//        sort(arr, l, mid);
-//        sort(arr, mid + 1, r);
-//        merge(arr, l, mid, r);
-//    }
     public static void sort(Comparable[] arr, int l, int r) {
-        if (l >= r) return;
+//        if (l >= r) return;
 
         if (r - l <= 15) {
             InsertionSort.sort(arr, l, r);
@@ -100,7 +89,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int n = 5000000;
+        int n = 50000;
 //        Integer[] arr1 = SortTestHelper.generateRandomArray(n, 0, n);
 //        Integer[] arr2 = arr1.clone();
 //

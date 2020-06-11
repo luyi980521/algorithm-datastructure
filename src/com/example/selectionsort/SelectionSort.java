@@ -1,8 +1,7 @@
 package com.example.selectionsort;
 
 /**
- * Created by Lyman on 2020/5/28.
- *
+ * Created by Lyman.
  * 描述：选择排序实现，算法时间复杂度为 O(n^2)
  * 实现思路：在传入的数组中设定最小元素的下标 minIndex 为数组最前面的元素，
  * 然后将该下标处的值与后面元素的值进行比对，如果后面的元素小于它，

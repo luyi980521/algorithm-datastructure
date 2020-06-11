@@ -1,8 +1,7 @@
 package com.example.mergesort;
 
 /**
- * Created by Lyman on 2020/6/3.
- * <p>
+ * Created by Lyman.
  * 描述：自底向上实现归并排序，时间复杂度 O(nlogn)
  */
 public class MergeSortBU {

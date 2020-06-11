@@ -3,8 +3,7 @@ package com.example.insertionsort;
 import com.example.selectionsort.SortTestHelper;
 
 /**
- * Created by Lyman on 2020/5/29.
- *
+ * Created by Lyman.
  * 描述：插入排序实现，算法时间复杂度为 O(n^2)
  * 实现思路：在进行插入排序时，由于第一个元素默认就是有序的，所以从第二个元素开始进行排序，
  * 排序时从后向前进行比较，如果后面的值小于前面的值，进行一次交换，否则可以直接结束本次循环。

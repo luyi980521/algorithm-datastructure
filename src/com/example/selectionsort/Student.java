@@ -1,7 +1,7 @@
 package com.example.selectionsort;
 
 /**
- * Created by Lyman on 2020/5/28.
+ * Created by Lyman.
  * 描述：学生类
  * 设定以学生的分数进行比较
  */
